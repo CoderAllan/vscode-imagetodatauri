@@ -1,5 +1,5 @@
-var fs = require('fs');
-var path = require('path')
+import fs = require('fs');
+import path = require('path')
 import * as vscode from 'vscode';
 import { Base64 } from 'js-base64';
 
@@ -32,7 +32,7 @@ export abstract class Convert {
         editor.edit(editBuilder => {
           editBuilder.replace(selection, dataUri);
         });
-      } 
+      }
       else {
         vscode.window.showInformationMessage(`File not found: ${imgSrc}`);
       }
@@ -52,11 +52,11 @@ export abstract class Convert {
 
   private static createDataUriFromImage(filename: string): string {
     const imageContent = fs.readFileSync(filename);
-    const base64EncodeImage = Base64.toBase64(imageContent);
+    const base64EncodeImage = Base64.toBase64(imageContent.toString());
     const extension = path.extname(filename)
     return `data:image/${extension};base64,${base64EncodeImage}`;
   }
-  
+
   private static fileExists(filename: string): boolean {
     try{
       return fs.lstatSync(filename).isFile();
@@ -65,8 +65,8 @@ export abstract class Convert {
     }
   }
   private static getWorkspaceFolder(): string {
-    var folder = vscode.workspace.workspaceFolders;
-    var directoryPath: string = '';
+    const folder = vscode.workspace.workspaceFolders;
+    let directoryPath: string = '';
     if (folder !== null && folder !== undefined) {
       directoryPath = folder[0].uri.fsPath;
     }
