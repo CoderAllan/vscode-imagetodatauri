@@ -20,7 +20,9 @@
   "keywords": [
     "datauri",
     "image",
-    "html"
+    "html",
+    "png",
+    "jpg"
   ],
   "activationEvents": [
     "onCommand:vscode-imagetodatauri.imageToDataUriConvertFile",
