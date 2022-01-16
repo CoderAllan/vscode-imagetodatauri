@@ -43,7 +43,7 @@
     "menus": {
       "explorer/context": [
         {
-          "when": "resourceExtname == .png || resourceExtname == .jpg || resourceExtname == .jpeg || resourceExtname == .svg || resourceExtname == .gif",
+          "when": "resourceExtname == .png || resourceExtname == .jpg || resourceExtname == .jpeg || resourceExtname == .svg || resourceExtname == .gif || resourceExtname == .ico",
           "command": "vscode-imagetodatauri.imageToDataUriConvertFile",
           "group": "6_copypath"
         }
