@@ -73,6 +73,6 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "js-base64": "^3.7.3"
+    "js-base64": "^3.7.4"
   }
 }
