@@ -27,7 +27,7 @@
   "activationEvents": [
     "onCommand:vscode-imagetodatauri.imageToDataUriConvertFile",
     "onCommand:vscode-imagetodatauri.imageToDataUriConvertUri"
-  ],  
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
@@ -65,11 +65,11 @@
     "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
-    "@types/node": "^20.4.2",
+    "@types/node": "^20.4.3",
     "@types/vscode": "^1.80.0",
     "ts-loader": "^9.4.4",
     "typescript": "^5.1.6",
-    "webpack": "^5.88.1",
+    "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
