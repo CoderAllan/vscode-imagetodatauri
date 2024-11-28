@@ -4,7 +4,7 @@
   "displayName": "Image to Data Uri",
   "description": "An extension for Visual Studio Code for converting an image file to a html data uri",
   "icon": "logo.png",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "repository": "https://github.com/CoderAllan/vscode-imagetodatauri",
   "author": {
@@ -12,7 +12,7 @@
     "url": "https://github.com/CoderAllan"
   },
   "engines": {
-    "vscode": "^1.80.0"
+    "vscode": "^1.95.0"
   },
   "categories": [
     "Other"
