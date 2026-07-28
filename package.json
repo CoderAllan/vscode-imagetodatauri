@@ -65,14 +65,14 @@
     "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
-    "@types/node": "^26.1.1",
+    "@types/node": "^26.1.2",
     "@types/vscode": "^1.125.0",
     "ts-loader": "^9.6.2",
     "typescript": "^7.0.2",
-    "webpack": "^5.109.0",
+    "webpack": "^5.109.1",
     "webpack-cli": "^7.2.1"
   },
   "dependencies": {
-    "js-base64": "^3.9.1"
+    "js-base64": "^3.9.2"
   }
 }
